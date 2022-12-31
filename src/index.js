@@ -5,7 +5,7 @@ let minutes = date.getMinutes();
 let currentDate = document.querySelector("#date");
 let days = ["Sunday","Monday","Tuesday","Wednesday","Thursday","Friday","Saturday"];
 let day = days[date.getDay()];
-currentDate.innerHTML = `${day} ${hour}:${minutes}`
+currentDate.innerHTML = `Last Update: ${day} ${hour}:${minutes}`
 
 function showResult(response){
     console.log(response.data);
