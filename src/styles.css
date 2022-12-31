@@ -70,7 +70,6 @@ body {
   .all a{
     text-decoration: none;
   }
-  /* .temp:hover{
-    text-decoration: none;
-    
-  } */
+  #describe::first-letter{
+    text-transform: capitalize;
+  }

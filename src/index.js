@@ -16,11 +16,11 @@ function showResult(response){
     temperature.innerHTML = Math.round(temp) ;
     celsius = Math.round(temp) ;
     let humidity = document.querySelector("#humidity");
-    humidity.innerHTML = `Humidity: ${response.data.main.humidity} %`;
+    humidity.innerHTML = `Humidity: ${response.data.main.humidity}%`;
     let wind = document.querySelector("#wind");
-    wind.innerHTML = `Wind: ${Math.round(response.data.wind.speed)} km/h`;
+    wind.innerHTML = `Wind: ${Math.round(response.data.wind.speed)}km/h`;
     let describe = document.querySelector("#describe");
-    describe.innerHTML = response.data.weather[0].main ;
+    describe.innerHTML = response.data.weather[0].description ;
     let cityName = document.querySelector("#city");
     cityName.innerHTML = response.data.name ;
 
